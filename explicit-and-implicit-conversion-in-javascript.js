@@ -20,13 +20,27 @@ Use console.log() to clearly show the before-and-after type conversions.
 
 
 let result = "5" - 2;
-console.log("The result is: " + result);
+console.log("The result is: " + result); // I think that this code is reading the right way and doesn't need adjusted
 
-let isValid = Boolean("false");
-if (isValid) {
-    console.log("This is valid!");
-}
+let isValid = Boolean(null);
+if (isValid)  {
+    console.log("This is valid!"); 
+}                                     // Changed the "false" to null, as even though it said "false" it was still running as if true
 
 let age = "25";
 let totalAge = age + 5;
-console.log("Total Age: " + totalAge);
+let num = 30;
+console.log("Total Age: " + num);   // age + 5 was 30, so I added the let num, and then added num in the console.log
+
+
+// Implicit
+
+secondAge = 25;
+console.log("You are ${secondAge} years old.");
+
+// Explicit 
+
+let bool = true;
+console.log(bool.toString(true));
+
+console.log("This is a practice line, it's not letting me commit my code.")
